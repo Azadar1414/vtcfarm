@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<meta name="theme-color" content="#15171B"/>
+<title>Prefab Farm Buildings | VTCFaRM — Custom Size Modular Structures</title>
+<meta name="description" content="VTCFaRM prefab farm buildings — customized size according to your demand. Farm offices, processing rooms, cold storage, laboratories. Integrates with container farms. Steel frame, fast delivery, global shipping."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://vtcfarm.com/products/prefab-houses/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://images.unsplash.com"/>
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=85" fetchpriority="high"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Archivo+Expanded:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌿%3C/text%3E%3C/svg%3E"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="VTCFaRM"/>
+<link rel="stylesheet" href="shared.css"/>
+<style>
+.hero-mosaic{display:grid;grid-template-columns:1.1fr 1fr;grid-template-rows:240px 180px;gap:1px;background:var(--hairline);border:1px solid var(--hairline)}
+.hero-mosaic .hm-main{grid-row:1/3;position:relative;overflow:hidden;background:var(--bg)}
+.hero-mosaic .hm-sm{position:relative;overflow:hidden;background:var(--bg)}
+.hero-mosaic img{width:100%;height:100%;object-fit:cover;filter:grayscale(0.15);transition:filter .4s}
+.hero-mosaic:hover img{filter:grayscale(0)}
+.ph-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:3.5rem;align-items:center;margin-top:1.5rem}
+.ph-h1 .biggest{display:block;font-size:1.1em;margin-top:.15rem}
+
+.config-note{background:var(--bg2);border-left:2px solid var(--amber);padding:1rem 1.25rem;margin-top:1.5rem;font-size:.85rem;color:var(--muted);display:flex;gap:12px;align-items:flex-start}
+.config-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:2rem;background:var(--hairline);border:1px solid var(--hairline)}
+.config-card{background:var(--bg2);overflow:hidden;transition:background .2s}
+.config-card:hover{background:var(--bg3)}
+.config-img{height:170px;overflow:hidden;background:var(--bg)}
+.config-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(0.2);transition:filter .3s,transform .4s}
+.config-card:hover .config-img img{filter:grayscale(0);transform:scale(1.04)}
+.config-body{padding:1.5rem}
+.config-size{font-family:var(--FM);font-size:1.1rem;color:var(--amber);font-weight:500;margin-bottom:.3rem}
+.config-label{font-family:var(--FD);font-weight:700;font-size:.92rem;color:var(--white);margin-bottom:.5rem}
+.config-desc{font-size:.81rem;color:var(--muted);line-height:1.6}
+.example-tag{display:inline-block;font-family:var(--FM);font-size:.62rem;font-weight:500;color:var(--dim);background:var(--bg);border:1px solid var(--hairline);padding:3px 10px;margin-top:.75rem;letter-spacing:0.04em;text-transform:uppercase}
+
+.showcase-split{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:2.5rem;background:var(--hairline);border:1px solid var(--hairline)}
+.sc-card{overflow:hidden;position:relative;height:380px;background:var(--bg)}
+.sc-card img{width:100%;height:100%;object-fit:cover;filter:grayscale(0.2);transition:filter .4s,transform .5s}
+.sc-card:hover img{filter:grayscale(0);transform:scale(1.04)}
+.sc-cap{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(21,23,27,.92));padding:1.5rem 1.25rem 1rem}
+.sc-cap-title{font-family:var(--FD);font-weight:700;font-size:1rem;color:var(--white);margin-bottom:.25rem}
+.sc-cap-desc{font-family:var(--FM);font-size:.74rem;color:var(--amber-lt)}
+
+.uc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:2rem;background:var(--hairline);border:1px solid var(--hairline)}
+.uc-item{background:var(--bg2);padding:1.25rem;display:flex;align-items:center;gap:12px;transition:background .2s}
+.uc-item:hover{background:var(--bg3)}
+.uc-icon{font-family:var(--FM);font-size:.7rem;color:var(--amber);flex-shrink:0;width:24px}
+.uc-text{font-size:.85rem;font-weight:600;color:var(--white)}
+
+.integration-diagram{background:var(--bg2);border:1px solid var(--hairline);padding:2.5rem;margin-top:2.5rem;display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap}
+.int-block{display:flex;flex-direction:column;align-items:center;gap:.75rem;flex:1;min-width:160px}
+.int-icon-box{width:72px;height:72px;border:1px solid var(--amber-line);background:rgba(232,163,61,0.04);display:flex;align-items:center;justify-content:center;font-family:var(--FM);font-size:.7rem;color:var(--amber)}
+.int-label{font-family:var(--FD);font-weight:700;font-size:.85rem;color:var(--white);text-align:center}
+.int-desc{font-size:.72rem;color:var(--muted);text-align:center;max-width:140px}
+.int-arrow{font-family:var(--FM);font-size:1.3rem;color:var(--amber);flex-shrink:0}
+
+.specs-table{width:100%;border-collapse:collapse;margin-top:1.5rem;font-size:.85rem;border:1px solid var(--hairline)}
+.specs-table th{background:var(--bg3);color:var(--amber);font-family:var(--FM);font-size:.68rem;font-weight:500;letter-spacing:0.04em;text-transform:uppercase;padding:12px 16px;text-align:left;border-bottom:1px solid var(--hairline)}
+.specs-table td{padding:11px 16px;border-bottom:1px solid var(--hairline);color:var(--muted)}
+.specs-table tr:last-child td{border-bottom:none}
+.specs-table .lbl{color:var(--dim);font-size:.78rem;width:36%;font-family:var(--FM)}
+.specs-table td:not(.lbl){color:var(--white)}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:2.5rem;background:var(--hairline);border:1px solid var(--hairline)}
+.step{background:var(--bg2);padding:2rem 1.5rem;text-align:center;position:relative}
+.step-num{font-family:var(--FM);font-size:1.4rem;font-weight:500;color:var(--amber);margin-bottom:1rem}
+.step-title{font-family:var(--FD);font-weight:700;font-size:.88rem;color:var(--white);margin-bottom:.4rem}
+.step-desc{font-size:.78rem;color:var(--muted);line-height:1.6}
+
+.cta-banner{border:1px solid var(--amber-line);background:linear-gradient(135deg,rgba(232,163,61,0.06),transparent);padding:3rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;position:relative}
+.cta-banner::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--amber)}
+.cb-title{font-family:var(--FDX);font-size:1.4rem;font-weight:700;margin-bottom:.5rem;color:var(--white)}
+.cb-title em{font-style:normal;color:var(--amber)}
+.cb-desc{color:var(--muted);font-size:.88rem;max-width:500px}
+.cb-btns{display:flex;gap:.85rem;flex-wrap:wrap;flex-shrink:0}
+
+.form{display:flex;flex-direction:column;gap:0;background:var(--bg2);border:1px solid var(--hairline);padding:2rem;margin-top:2rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.25rem}
+.fg{display:flex;flex-direction:column;gap:7px;margin-bottom:1.25rem}
+.form-row .fg{margin-bottom:0}
+label{font-family:var(--FM);font-size:.68rem;color:var(--dim);text-transform:uppercase;letter-spacing:0.04em}
+input,select,textarea{background:var(--bg);border:1px solid var(--hairline);border-radius:0;padding:11px 13px;color:var(--white);font-family:var(--FB);font-size:.88rem;outline:none;width:100%;transition:border-color .2s}
+input:focus,select:focus,textarea:focus{border-color:var(--amber)}
+input::placeholder,textarea::placeholder{color:var(--dim)}
+select option{background:var(--bg)}
+textarea{resize:vertical;min-height:90px}
+.form-submit{background:var(--amber);color:#1A1300;border:1px solid var(--amber);padding:13px;font-weight:700;font-size:.85rem;letter-spacing:0.02em;font-family:var(--FB);cursor:pointer;width:100%;transition:all .25s}
+.form-submit:hover{background:var(--amber-lt);border-color:var(--amber-lt)}
+
+@media(max-width:1024px){
+  .ph-layout{grid-template-columns:1fr}
+  .config-grid{grid-template-columns:1fr 1fr}
+  .showcase-split{grid-template-columns:1fr}
+  .uc-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .ham{display:flex}
+  .config-grid{grid-template-columns:1fr}
+  .uc-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .form-row{grid-template-columns:1fr}
+  .integration-diagram{flex-direction:column}
+  .int-arrow{transform:rotate(90deg)}
+  input,select,textarea{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="nav-logo" href="index.html"><span class="mark"></span>VTCFaRM</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="nav-drop" id="solDrop">
+      <button class="nav-drop-btn" onclick="toggleDrop(event,'solDrop')">
+        Solutions
+        <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="nav-drop-menu">
+        <a href="container-farm.html" class="nav-drop-item"><span class="nav-drop-icon">01</span> Container Farms</a>
+        <a href="grow-cabinet.html" class="nav-drop-item"><span class="nav-drop-icon">02</span> Grow Cabinets</a>
+        <a href="vertical-rack.html" class="nav-drop-item"><span class="nav-drop-icon">03</span> Vertical Equipment</a>
+        <a href="prefab-houses.html" class="nav-drop-item"><span class="nav-drop-icon">04</span> Prefab Houses</a>
+        <div class="nav-drop-divider"></div>
+        <a href="index.html#solutions" class="nav-drop-item"><span class="nav-drop-icon">→</span> Services &amp; Support</a>
+      </div>
+    </li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a class="nav-cta" href="index.html#contact">Get a Quote</a>
+    <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="bc">
+  <a href="index.html">Home</a><span>/</span>
+  <a href="index.html#products">Products</a><span>/</span>
+  <span style="color:var(--muted)">Prefab Farm Buildings</span>
+</div>
+
+<section class="page-hero">
+  <div class="ph-grid"></div>
+  <div class="ph-inner">
+    <div class="ph-layout">
+      <div>
+        <div class="ph-tag"><span class="dot"></span><span>Unit 04 — Prefab Farm Buildings</span></div>
+        <h1 class="ph-h1">Customized size<br><em class="biggest">according to your demand.</em></h1>
+        <p class="ph-desc">Modular prefab buildings designed to integrate with your farm operation. Offices, processing rooms, cold storage, laboratories, packaging stations, worker quarters — built to whatever dimensions your project requires. No fixed sizes. Any size per demand.</p>
+        <div class="ph-btns">
+          <a href="#configs" class="btn-a">View Example Configurations</a>
+          <a href="index.html#contact" class="btn-o">Request Custom Dimensions</a>
+        </div>
+      </div>
+      <div class="hero-mosaic">
+        <div class="hm-main">
+          <div class="bracket-frame"><span class="bl"></span><span class="br"></span></div>
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=85" loading="eager" decoding="async" fetchpriority="high" alt="Modern prefab building exterior with clean architectural lines in agricultural setting">
+          <div class="hero-tagplate">
+            <span class="tagplate-id">UNIT // VTC-PF-CUSTOM</span>
+            <span class="tagplate-name">Prefab Farm Building</span>
+          </div>
+        </div>
+        <div class="hm-sm"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80" loading="lazy" decoding="async" fetchpriority="low" alt="Modern interior office space inside prefab farm building"></div>
+        <div class="hm-sm"><img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&q=80" loading="lazy" decoding="async" fetchpriority="low" alt="Modular steel frame prefab structure under construction"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">
+    <div class="tick-item"><b>Any Size</b> — Built to Your Exact Demand</div><div class="tick-sep">/</div>
+    <div class="tick-item">Office · Processing · Cold Storage · Laboratory</div><div class="tick-sep">/</div>
+    <div class="tick-item"><b>Steel Frame</b> — Engineered for Local Conditions</div><div class="tick-sep">/</div>
+    <div class="tick-item">Integrates with Container Farms</div><div class="tick-sep">/</div>
+    <div class="tick-item"><b>Factory Direct</b> — Custom Built — Global Delivery</div><div class="tick-sep">/</div>
+    <div class="tick-item"><b>Any Size</b> — Built to Your Exact Demand</div><div class="tick-sep">/</div>
+    <div class="tick-item">Office · Processing · Cold Storage · Laboratory</div><div class="tick-sep">/</div>
+    <div class="tick-item"><b>Steel Frame</b> — Engineered for Local Conditions</div><div class="tick-sep">/</div>
+    <div class="tick-item">Integrates with Container Farms</div><div class="tick-sep">/</div>
+    <div class="tick-item"><b>Factory Direct</b> — Custom Built — Global Delivery</div>
+  </div>
+</div>
+
+<section class="sec" id="configs">
+  <div class="sec-inner">
+    <div class="sec-num">Example Configurations</div>
+    <div class="sec-h2">Examples only — every building is custom</div>
+    <div class="sec-sub">The dimensions below are illustrative starting points, not fixed product sizes. Tell us your exact space requirements and we'll design accordingly.</div>
+
+    <div class="config-note">
+      <span style="font-family:var(--FM);font-size:.7rem;color:var(--amber);flex-shrink:0">i</span>
+      <span>These are example configurations to help you visualize scale. <strong style="color:var(--white)">Actual buildings are built to your exact specified dimensions</strong> — there is no fixed size catalogue for prefab buildings.</span>
+    </div>
+
+    <div class="config-grid">
+      <div class="config-card rev">
+        <div class="config-img"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=80" loading="lazy" decoding="async" fetchpriority="low" alt="Small prefab office building example for farm control room"></div>
+        <div class="config-body">
+          <div class="config-size">3m × 6m</div>
+          <div class="config-label">Small — Office / Control Room</div>
+          <div class="config-desc">Compact building suitable for a farm management office, IoT control room, or staff break area adjacent to container farms.</div>
+          <div class="example-tag">Example Only</div>
+        </div>
+      </div>
+      <div class="config-card rev d1">
+        <div class="config-img"><img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=500&q=80" loading="lazy" decoding="async" fetchpriority="low" alt="Medium prefab building example for processing and packaging facility"></div>
+        <div class="config-body">
+          <div class="config-size">6m × 12m</div>
+          <div class="config-label">Medium — Processing / Packaging</div>
+          <div class="config-desc">Mid-size facility for post-harvest processing, washing, packing, and quality control before produce leaves the farm site.</div>
+          <div class="example-tag">Example Only</div>
+        </div>
+      </div>
+      <div class="config-card rev d2">
+        <div class="config-img"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=500&q=80" loading="lazy" decoding="async" fetchpriority="low" alt="Large prefab multi-purpose facility example with modern architecture"></div>
+        <div class="config-body">
+          <div class="config-size">10m × 20m</div>
+          <div class="config-label">Large — Multi-Purpose Facility</div>
+          <div class="config-desc">Full-scale building combining office, laboratory, cold storage, and packaging under one roof for larger farm operations.</div>
+          <div class="example-tag">Example Only</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--bg2);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)">
+  <div class="sec-inner">
+    <div class="sec-num">Visual Reference</div>
+    <div class="sec-h2">Exterior &amp; interior styling</div>
+    <div class="showcase-split">
+      <div class="sc-card rev">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=85" loading="lazy" decoding="async" fetchpriority="low" alt="Modern architectural exterior of prefab farm building with clean lines and large windows">
+        <div class="sc-cap">
+          <div class="sc-cap-title">Exterior — Modern Architectural Style</div>
+          <div class="sc-cap-desc">// clean lines, insulated steel panels, large windows</div>
+        </div>
+      </div>
+      <div class="sc-card rev d1">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=85" loading="lazy" decoding="async" fetchpriority="low" alt="Modern open-plan interior office space connected to farm operations with natural light">
+        <div class="sc-cap">
+          <div class="sc-cap-title">Interior — Office Integrated with Farm</div>
+          <div class="sc-cap-desc">// open-plan layouts, natural light, modern finishes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-inner">
+    <div class="sec-num">Applications</div>
+    <div class="sec-h2">Built for every farm support function</div>
+    <div class="uc-grid">
+      <div class="uc-item rev"><div class="uc-icon">01</div><div class="uc-text">Farm Office / Control Room</div></div>
+      <div class="uc-item rev d1"><div class="uc-icon">02</div><div class="uc-text">Processing &amp; Packaging Station</div></div>
+      <div class="uc-item rev d2"><div class="uc-icon">03</div><div class="uc-text">Cold Storage Facility</div></div>
+      <div class="uc-item rev"><div class="uc-icon">04</div><div class="uc-text">Laboratory / Quality Control</div></div>
+      <div class="uc-item rev d1"><div class="uc-icon">05</div><div class="uc-text">Worker Quarters / Accommodation</div></div>
+      <div class="uc-item rev d2"><div class="uc-icon">06</div><div class="uc-text">Reception / Visitor Centre</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--bg2);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)">
+  <div class="sec-inner">
+    <div class="sec-num">Complete Farm Vision</div>
+    <div class="sec-h2">Integration with container farms</div>
+    <div class="sec-sub">Prefab buildings are designed to connect seamlessly with your container farms and vertical growing equipment — creating one unified operation.</div>
+    <div class="integration-diagram rev">
+      <div class="int-block">
+        <div class="int-icon-box">01</div>
+        <div class="int-label">Container Farms</div>
+        <div class="int-desc">Growing operations — leafy greens, cannabis, herbs</div>
+      </div>
+      <div class="int-arrow">+</div>
+      <div class="int-block">
+        <div class="int-icon-box">02</div>
+        <div class="int-label">Prefab Building</div>
+        <div class="int-desc">Office, processing, storage, lab</div>
+      </div>
+      <div class="int-arrow">=</div>
+      <div class="int-block">
+        <div class="int-icon-box">03</div>
+        <div class="int-label">Complete Farm</div>
+        <div class="int-desc">One unified, fully operational facility</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-inner">
+    <div class="sec-num">Construction Specifications</div>
+    <div class="sec-h2">What's included in every build</div>
+    <table class="specs-table rev">
+      <thead><tr><th>Component</th><th>Specification</th></tr></thead>
+      <tbody>
+        <tr><td class="lbl">Frame Structure</td><td>Galvanised light steel frame — engineered for local wind/seismic loads</td></tr>
+        <tr><td class="lbl">Wall Insulation</td><td>EPS or rock wool sandwich panels — 50mm to 150mm thickness options</td></tr>
+        <tr><td class="lbl">Roofing</td><td>Insulated roof panels with optional skylights and rainwater collection</td></tr>
+        <tr><td class="lbl">Flooring</td><td>Raised steel/concrete composite floor — vinyl, epoxy, or tile finish options</td></tr>
+        <tr><td class="lbl">Electrical</td><td>Full wiring, distribution board, LED lighting, outlets — to local code</td></tr>
+        <tr><td class="lbl">Plumbing</td><td>Water supply, drainage, and washroom fit-out available on request</td></tr>
+        <tr><td class="lbl">Windows &amp; Doors</td><td>Double-glazed windows, insulated doors, optional roller shutters</td></tr>
+        <tr><td class="lbl">Climate Control</td><td>Split AC / HVAC sized to building volume and use case</td></tr>
+        <tr><td class="lbl">Size Range</td><td>Any size per demand — no minimum, no fixed maximum</td></tr>
+        <tr><td class="lbl">Delivery Format</td><td>Flat-pack modular panels or fully pre-assembled modules (project-dependent)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--bg2);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)">
+  <div class="sec-inner">
+    <div class="sec-num">Process</div>
+    <div class="sec-h2">From dimensions to delivery</div>
+    <div class="steps">
+      <div class="step rev">
+        <div class="step-num">01</div>
+        <div class="step-title">Share Your Dimensions</div>
+        <div class="step-desc">Tell us your required size, use case, and site location. We confirm feasibility within 48 hours.</div>
+      </div>
+      <div class="step rev d1">
+        <div class="step-num">02</div>
+        <div class="step-title">Design &amp; Quote</div>
+        <div class="step-desc">We provide a layout drawing, materials specification, and detailed quotation for your approval.</div>
+      </div>
+      <div class="step rev d2">
+        <div class="step-num">03</div>
+        <div class="step-title">Manufacture &amp; Ship</div>
+        <div class="step-desc">Components are manufactured at our factory and shipped via sea or land freight to your site location.</div>
+      </div>
+      <div class="step rev d3">
+        <div class="step-num">04</div>
+        <div class="step-title">Assemble &amp; Handover</div>
+        <div class="step-desc">On-site assembly by our team or guided remote installation. Typical assembly time: 5–15 days depending on size.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact-prefab">
+  <div class="sec-inner">
+    <div class="cta-banner rev">
+      <div>
+        <div class="cb-title">Request <em>Custom Dimensions</em></div>
+        <div class="cb-desc">Tell us your exact space requirements, use case, and timeline. We'll send a detailed design and quotation within 48 hours.</div>
+      </div>
+      <div class="cb-btns">
+        <a href="index.html#contact" class="btn-a">Request Custom Quote</a>
+        <a href="index.html#contact" class="btn-o">Speak to Our Team</a>
+      </div>
+    </div>
+
+    <form class="form rev d1" onsubmit="submitForm(event)">
+      <div class="form-row">
+        <div class="fg"><label>Full Name *</label><input type="text" placeholder="John Smith" required></div>
+        <div class="fg"><label>Email *</label><input type="email" placeholder="john@company.com" required></div>
+      </div>
+      <div class="form-row">
+        <div class="fg"><label>Required Dimensions (L × W)</label><input type="text" placeholder="e.g. 8m × 15m"></div>
+        <div class="fg"><label>Intended Use</label>
+          <select>
+            <option value="">Select use case...</option>
+            <option>Farm Office / Control Room</option>
+            <option>Processing &amp; Packaging</option>
+            <option>Cold Storage</option>
+            <option>Laboratory</option>
+            <option>Worker Quarters</option>
+            <option>Multi-Purpose / Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="fg"><label>Project Details</label><textarea placeholder="Site location, timeline, integration with existing container farms, special requirements..."></textarea></div>
+      <button type="submit" class="form-submit">Request Custom Dimensions →</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="f-bot">
+    <div class="f-logo"><span class="mark"></span>VTCFaRM</div>
+    <div class="f-copy">© 2025 VTCFaRM — FACTORY DIRECT / CUSTOM BUILT / GLOBAL DELIVERY</div>
+    <a href="index.html#contact" style="color:var(--amber);font-size:.85rem;font-weight:600">info@vtcfarm.com</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/8613246296179" class="wa-btn" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+const ham=document.getElementById('ham'),nav=document.getElementById('nav');
+ham.addEventListener('click',()=>nav.classList.toggle('open'));
+
+function toggleDrop(e,id){
+  e.stopPropagation();
+  const el=document.getElementById(id);
+  document.querySelectorAll('.nav-drop').forEach(d=>{if(d!==el)d.classList.remove('open')});
+  el.classList.toggle('open');
+}
+document.addEventListener('click',()=>document.querySelectorAll('.nav-drop').forEach(d=>d.classList.remove('open')));
+
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')}),{threshold:.1});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+
+function submitForm(e){e.preventDefault();const b=e.target.querySelector('.form-submit');b.textContent='✓ Sent! We will respond within 48 hours.';b.style.background='var(--amber-lt)';b.disabled=true;}
+</script>
+</body>
+</html>
