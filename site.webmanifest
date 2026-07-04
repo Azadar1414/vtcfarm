@@ -1,0 +1,21 @@
+{
+  "name": "VTCFaRM — Modular Vertical Farming Solutions",
+  "short_name": "VTCFaRM",
+  "description": "Factory-direct container farms, grow cabinets, vertical equipment, and prefab farm buildings. Custom built. Global delivery.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D0F13",
+  "theme_color": "#0D0F13",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "agriculture", "manufacturing"]
+}

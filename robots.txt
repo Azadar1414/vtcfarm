@@ -1,0 +1,10 @@
+# https://www.vtcfarm.com/robots.txt
+# VTCFaRM — Modular Vertical Farming Solutions
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Crawl-delay: 1
+
+Sitemap: https://www.vtcfarm.com/sitemap.xml

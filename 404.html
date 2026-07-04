@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<meta name="theme-color" content="#0D0F13"/>
+
+<title>Page Not Found | VTCFaRM — Modular Vertical Farming Solutions</title>
+<meta name="robots" content="noindex, follow"/>
+<link rel="canonical" href="https://www.vtcfarm.com/"/>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Archivo+Expanded:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌿%3C/text%3E%3C/svg%3E"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<link rel="manifest" href="site.webmanifest"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+<style>
+:root{
+  --bg:#0D0F13;
+  --bg2:#14171D;
+  --bg3:#1C2028;
+  --steel:#3A4049;
+  --hairline:rgba(255,255,255,0.07);
+  --hairline3:rgba(255,255,255,0.12);
+  --amber:#E8A33D;
+  --amber-lt:#F4C172;
+  --amber-glow:rgba(232,163,61,0.15);
+  --amber-line:rgba(232,163,61,0.30);
+  --grad-amber:linear-gradient(135deg,#E8A33D 0%,#F4C172 50%,#E8A33D 100%);
+  --white:#F5F3EC;
+  --muted:#A8B2BE;
+  --dim:#788290;
+  --FDX:'Archivo Expanded',sans-serif;
+  --FD:'Archivo',sans-serif;
+  --FB:'IBM Plex Sans',sans-serif;
+  --FM:'IBM Plex Mono',monospace;
+  --r:3px;
+  --ease:cubic-bezier(0.16,1,0.3,1);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  background:var(--bg);color:var(--white);font-family:var(--FB);
+  min-height:100vh;min-height:100dvh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:2rem;position:relative;overflow:hidden;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+::selection{background:var(--amber);color:#1A1300}
+
+.bg-grid{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px, var(--hairline) 1px, transparent 0);background-size:36px 36px;opacity:.4;pointer-events:none}
+.glow{position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);width:700px;height:700px;background:radial-gradient(circle,var(--amber-glow) 0%,transparent 65%);pointer-events:none}
+.glow2{position:absolute;bottom:20%;left:30%;width:400px;height:400px;background:radial-gradient(circle,rgba(76,141,242,0.06) 0%,transparent 60%);pointer-events:none}
+
+.logo{font-family:var(--FDX);font-weight:700;font-size:1.3rem;margin-bottom:3rem;position:relative;z-index:1;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--white);transition:opacity .2s}
+.logo:hover{opacity:.8}
+.logo .mark{width:10px;height:10px;background:var(--amber);box-shadow:0 0 12px var(--amber-glow);transition:transform .3s cubic-bezier(0.34,1.56,0.64,1)}
+.logo:hover .mark{transform:rotate(45deg) scale(1.1)}
+
+.id-tag{font-family:var(--FM);font-size:.73rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--dim);margin-bottom:1rem;position:relative;z-index:1}
+
+.code{font-family:var(--FDX);font-size:clamp(5rem,15vw,10rem);font-weight:700;line-height:1;position:relative;z-index:1;letter-spacing:-.02em;background:var(--grad-amber);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+.title{font-family:var(--FDX);font-size:1.4rem;font-weight:700;margin-top:1.5rem;position:relative;z-index:1;color:var(--white)}
+
+.desc{color:var(--muted);font-size:.94rem;margin-top:.85rem;max-width:440px;line-height:1.75;position:relative;z-index:1}
+
+.btns{display:flex;gap:1rem;margin-top:2.5rem;flex-wrap:wrap;justify-content:center;position:relative;z-index:1}
+
+.btn-a{
+  background:var(--grad-amber);color:#1A1300;
+  padding:15px 28px;font-weight:700;font-size:.85rem;
+  font-family:var(--FB);text-decoration:none;display:inline-flex;align-items:center;gap:10px;
+  transition:all .3s var(--ease);border:none;border-radius:var(--r);
+  box-shadow:0 8px 30px rgba(232,163,61,0.15);position:relative;overflow:hidden
+}
+.btn-a::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.25),transparent 50%);opacity:0;transition:opacity .3s}
+.btn-a:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(232,163,61,0.25)}
+.btn-a:hover::before{opacity:1}
+
+.btn-o{
+  background:transparent;color:var(--white);padding:15px 28px;
+  border:1px solid var(--steel);font-weight:600;font-size:.85rem;
+  font-family:var(--FB);text-decoration:none;transition:all .25s;border-radius:var(--r)
+}
+.btn-o:hover{border-color:var(--amber);color:var(--amber)}
+
+.links{display:flex;gap:0;margin-top:3.5rem;flex-wrap:wrap;justify-content:center;position:relative;z-index:1;border:1px solid var(--hairline);border-radius:var(--r);overflow:hidden}
+.links a{color:var(--muted);font-family:var(--FM);font-size:.76rem;text-decoration:none;transition:color .2s,background .2s;padding:13px 20px;border-right:1px solid var(--hairline)}
+.links a:last-child{border-right:none}
+.links a:hover{color:var(--amber);background:var(--bg2)}
+
+@media(max-width:768px){
+  .links{flex-direction:column}
+  .links a{border-right:none;border-bottom:1px solid var(--hairline)}
+  .links a:last-child{border-bottom:none}
+}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="glow"></div>
+<div class="glow2"></div>
+
+<a href="index.html" class="logo"><span class="mark"></span>VTCFaRM</a>
+<div class="id-tag">Error // 404-NOT-FOUND</div>
+<div class="code">404</div>
+<div class="title">This page hasn't sprouted yet</div>
+<div class="desc">The page you're looking for doesn't exist or may have moved. Let's get you back to growing.</div>
+<div class="btns">
+  <a href="index.html" class="btn-a">← Back to Homepage</a>
+  <a href="index.html#contact" class="btn-o">Contact Us</a>
+</div>
+<div class="links">
+  <a href="container-farm.html">Container Farms</a>
+  <a href="grow-cabinet.html">Grow Cabinets</a>
+  <a href="vertical-rack.html">Vertical Equipment</a>
+  <a href="prefab-houses.html">Prefab Houses</a>
+  <a href="https://wa.me/8613246296179" target="_blank" rel="noopener">WhatsApp Us</a>
+</div>
+</body>
+</html>
